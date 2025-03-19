@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ahri"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/roleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rol"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/regionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Región"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/dificultadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dificultad"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/costoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Costo"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/fechaLanzamientoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanzamiento"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/habilidadPrincipalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habilidad Principal"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/vidaBaseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vida Base"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/manaBaseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mana Base"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/esRangoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Es de Rango"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/historiaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historia"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
