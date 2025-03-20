@@ -4,12 +4,26 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:outlineProvider="bounds"
+    android:foreground="?attr/selectableItemBackground"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:weightSum="1"
+        android:showDividers="middle"
+        android:baselineAligned="false"
+        android:measureWithLargestChild="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true">
 
         <!-- Toolbar con botón de tres puntos -->
         <androidx.appcompat.widget.Toolbar
@@ -26,11 +40,26 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:padding="8dp"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:popupElevation="8dp"
+            android:dropDownWidth="match_parent"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:prompt="@string/app_name"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="true"
+            android:scrollbarThumbVertical="@color/material_dynamic_primary0"
+            android:scrollbarSize="4dp"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:focusableInTouchMode="true"
             android:layout_height="match_parent"/>
 
     </LinearLayout>
